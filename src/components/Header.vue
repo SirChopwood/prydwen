@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Headerbutton from "@/components/headerbutton.vue";
+import Headerbutton from "@/components/HeaderButton.vue";
 export default {
   components: {Headerbutton}
 }
