@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .halftone {
+        --mask: linear-gradient(rgb(0 0 0 / 0.55), rgb(0 0 0));
+        --stop1: 0.06rem;
+        --stop2: 1.5rem;
+        --invert: 0;
+        --dotColor: #c940af;
+        --bgColor: #0a0a0a;
+        --bgSize: 4rem;
+        --bgPosition: calc(var(--bgSize) / 2);
+        --dottedBackground: radial-gradient(circle at center, var(--dotColor) var(--stop1), transparent var(--stop2)), radial-gradient(circle at center, var(--dotColor) var(--stop1), transparent var(--stop2));
+
+        aspect-ratio: 1;
+        position: relative;
+        background: var(--bgColor);
+        filter: contrast(50) invert(var(--invert, 0));
+        mix-blend-mode: multiply;
+        isolation: isolate;
+    }
+
+    .halftone::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: var(--dottedBackground);
+        background-size: var(--bgSize, 1rem) var(--bgSize, 1rem);
+        background-repeat: round;
+        background-position: 0 0, var(--bgPosition) var(--bgPosition);
+        mask-image: var(--mask);
+    }
+}
