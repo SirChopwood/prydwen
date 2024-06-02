@@ -8,6 +8,7 @@
       <a href="/"><div class="pl-4 text-2xl font-bold">Louis Mayes</div></a>
       <div class="pl-4 italic text-neutral-400">Technical Artist</div>
     </div>
+    <div class="absolute top-0 right-0 m-1 px-2 py-1 rounded-md bg-amber-800 border-2 border-amber-400 text-amber-400">Work-In-Progress</div>
   </div>
 </template>
 

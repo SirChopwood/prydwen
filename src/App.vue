@@ -4,7 +4,7 @@ import Header from './components/Header.vue'
 </script>
 
 <template>
-  <div class="mt-16 z-100">
+  <div class="mt-16 mx-2 mb-2">
     <RouterView />
   </div>
   <Header />
