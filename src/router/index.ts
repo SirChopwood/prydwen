@@ -18,6 +18,11 @@ const router = createRouter({
       component: () => import('../views/about.vue')
     },
     {
+      path: '/projects/agm',
+      name: 'agm',
+      component: () => import('../views/projects/agm.vue')
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'notfound',
       component: HomeView
