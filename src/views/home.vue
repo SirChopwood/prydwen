@@ -16,7 +16,7 @@
     <ProjectThumbnail title="MOSVR" subtitle="Game Feel and Polish - Project 2" link="/projects/mosvr"/>
     <ProjectThumbnail title="Village Builder" subtitle="Game Feel and Polish - Project 1" link="/projects/vb"/>
     <ProjectThumbnail title="Versus Tower Defence" subtitle="Online Multiplayer Prototype" link="/projects/vstd"/>
-    <ProjectThumbnail title="Siege and Shield" subtitle="Senior Collaborative Project" link="/projects/sas"/>
+    <ProjectThumbnail title="Siege and Shield" subtitle="Senior Collaborative Project" image="/images/sas/SiegeAndShieldHeader.png" link="/projects/sas"/>
     <ProjectThumbnail title="Ramiris' Heresy" subtitle="Arma 3 Modding Experience" link="/projects/rh"/>
     <ProjectThumbnail title="FLAGS Mod" subtitle="Satisfactory Modding" link="/projects/flags"/>
     <ProjectThumbnail title="DMCA Friday" subtitle="Discord & Twitch Bots with Web Panel" link="/projects/dmca"/>

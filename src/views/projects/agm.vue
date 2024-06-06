@@ -63,7 +63,7 @@
       <ProjectInlineImage image="/images/agm/tuidemo4.png" />
     </template>
   </ProjectParagraph>
-  <ProjectParagraph title="Particls & Materials">
+  <ProjectParagraph title="Particles & Materials">
     <template #BodyColumn>
       While my primary focus for this project was working on the gameplay programming, I did manage to get a small amount of time to create some particle systems and materials to use about the map.
       <br><br>

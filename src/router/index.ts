@@ -23,6 +23,11 @@ const router = createRouter({
       component: () => import('../views/projects/agm.vue')
     },
     {
+      path: '/projects/sas',
+      name: 'sas',
+      component: () => import('../views/projects/sas.vue')
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'notfound',
       component: HomeView
