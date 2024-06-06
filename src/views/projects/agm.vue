@@ -7,7 +7,7 @@
     <ProjectTitleLink link="https://sirchopwood.itch.io/aventurers-guild-manager" linktext="Itch.io" />
   </ProjectTitle>
 
-  <ProjectParagraph class="z-50" title="Geometry Scripting">
+  <ProjectParagraph title="Geometry Scripting">
     <template #BodyColumn>
       For this project, I spent a large amount of time using the Geometry Script plugin for UE5. The intention was to create rooms dynamically as a singular mesh. The primary reason for this being optimisation, but also as a research task for myself as the new technology was rather interesting and could have many potential uses in the future.
       <br><br>
