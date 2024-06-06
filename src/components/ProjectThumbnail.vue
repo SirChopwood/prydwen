@@ -9,6 +9,7 @@ defineProps(['title', 'subtitle', 'image', 'link'])
       <div class="text-start text-2xl font-bold text-primary">{{title}}</div>
       <div class="pt-2 text-xl italic text-neutral-200">{{subtitle}}</div>
     </div>
+    <slot />
   </a>
 </template>
 

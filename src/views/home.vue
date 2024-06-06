@@ -17,10 +17,12 @@
     <ProjectThumbnail title="Village Builder" subtitle="Game Feel and Polish - Project 1" link="/projects/vb"/>
     <ProjectThumbnail title="Versus Tower Defence" subtitle="Online Multiplayer Prototype" link="/projects/vstd"/>
     <ProjectThumbnail title="Siege and Shield" subtitle="Senior Collaborative Project" image="/images/sas/SiegeAndShieldHeader.png" link="/projects/sas"/>
-    <ProjectThumbnail title="Ramiris' Heresy" subtitle="Arma 3 Modding Experience" link="/projects/rh"/>
-    <ProjectThumbnail title="FLAGS Mod" subtitle="Satisfactory Modding" link="/projects/flags"/>
-    <ProjectThumbnail title="DMCA Friday" subtitle="Discord & Twitch Bots with Web Panel" link="/projects/dmca"/>
-  </div>
+    <ProjectThumbnail title="Ramiris' Heresy" subtitle="Arma 3 Modding Experience" image="/images/rh/Voidmen.png" link="https://steamcommunity.com/sharedfiles/filedetails/?id=2167631151"/>
+    <ProjectThumbnail title="FLAGS Mod" subtitle="Satisfactory Modding" image="/images/flags/FLAGS.png" link="https://ficsit.app/mod/XLuK6Ci158x4G"/>
+      <ProjectThumbnail title="DMCA Friday" subtitle="Discord & Twitch Bots with Web Panel" link="/projects/dmca">
+        <div class="absolute bottom-0 w-full px-2 py-1 bg-amber-800 border-2 border-amber-400 rounded-b-md text-amber-400 opacity-50 group-hover:opacity-100">Work-In-Progress</div>
+      </ProjectThumbnail>
+    </div>
 </template>
 
 <script>
