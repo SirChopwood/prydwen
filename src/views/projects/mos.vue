@@ -1,6 +1,6 @@
 <template>
   <div class="fixed h-full w-full top-0 left-0 -z-50">
-    <img src="/images/sas/Promotional_Poster_2.png" class="object-cover object-center overflow-hidden">
+    <img src="/images/mos/Background.png" class="object-cover object-center overflow-hidden h-full w-full">
   </div>
 
   <ProjectTitle title="Munitions Officer Simulator"
