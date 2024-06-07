@@ -1,7 +1,8 @@
 <template>
-  <img src="/prydwen/images/agm/tempbg.png" class="fixed w-auto h-full top-0 left-0 -z-50">
+  <img src="/images/agm/tempbg.png" class="fixed w-auto h-full top-0 left-0 -z-50">
   <ProjectTitle title="Adventurer's Guild Manager"
-              subtitle="Master's Final Project, Gameplay Programming & User Interfaces">
+              subtitle="Master's Final Project, Gameplay Programming & User Interfaces"
+              image="/agm/LogoPart1.png">
     <ProjectTitleLink link="https://github.com/SirChopwood/Masters-Project" linktext="GitHub" />
     <ProjectTitleLink link="https://sirchopwood.itch.io/aventurers-guild-manager" linktext="Itch.io" />
   </ProjectTitle>
@@ -35,10 +36,10 @@
       With days remaining on the project and no feasible solution in sight, the feature had to be changed. It was at this point that we as a team had agree to use a backup solution. This involved using lines of individual static mesh components. For the game demo this functioned fine, however any long term gameplay would have suffered from the performance hit it induces.
     </template>
     <template #ImageColumn>
-      <ProjectInlineImage image="/prydwen/images/agm/gsdemo1.png" />
-      <ProjectInlineImage image="/prydwen/images/agm/gsdemo3.png" />
-      <ProjectInlineImage image="/prydwen/images/agm/gsdemo4.png" />
-      <ProjectInlineImage image="/prydwen/images/agm/gsdemo5.png" />
+      <ProjectInlineImage image="/images/agm/gsdemo1.png" />
+      <ProjectInlineImage image="/images/agm/gsdemo3.png" />
+      <ProjectInlineImage image="/images/agm/gsdemo4.png" />
+      <ProjectInlineImage image="/images/agm/gsdemo5.png" />
     </template>
   </ProjectParagraph>
   <ProjectParagraph title="Tavern UI">
@@ -56,10 +57,10 @@
       Additional features that followed included progress bars with customisable colour and text settings and more importantly a reusable PIP (Picture-in-Picture) setup for windows focussed on an actor in the world. These could be easily added to anything ingame and plugged in with minimal effort or knowledge. Though warning was still given to the team about the potential performance impacts of overusing scene captures.
     </template>
     <template #ImageColumn>
-      <ProjectInlineImage image="/prydwen/images/agm/tuidemo2.png" />
-      <ProjectInlineImage image="/prydwen/images/agm/tuidemo1.png" />
-      <ProjectInlineImage image="/prydwen/images/agm/tuidemo3.png" />
-      <ProjectInlineImage image="/prydwen/images/agm/tuidemo4.png" />
+      <ProjectInlineImage image="/images/agm/tuidemo2.png" />
+      <ProjectInlineImage image="/images/agm/tuidemo1.png" />
+      <ProjectInlineImage image="/images/agm/tuidemo3.png" />
+      <ProjectInlineImage image="/images/agm/tuidemo4.png" />
     </template>
   </ProjectParagraph>
   <ProjectParagraph title="Particles & Materials">
@@ -71,8 +72,8 @@
       Early on in the project I worked on a cleaned up version of my Cel Shader. This includes customisable outlines and shadow masking. Unlike many alternatives it attempts to remain subtle in its effects and works to make the textures of the asset pop and contract.
     </template>
     <template #ImageColumn>
-      <ProjectInlineImage image="/prydwen/images/agm/tademo1.png" />
-      <ProjectInlineImage image="/prydwen/images/agm/tempbg.png" />
+      <ProjectInlineImage image="/images/agm/tademo1.png" />
+      <ProjectInlineImage image="/images/agm/tempbg.png" />
     </template>
   </ProjectParagraph>
 </template>

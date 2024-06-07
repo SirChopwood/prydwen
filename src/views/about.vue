@@ -1,6 +1,6 @@
 <template>
   <div class="pt-4 text-primary font-bold text-3xl">Hi there!</div>
-  <div class="w-full flex justify-center"><img src="/prydwen/images/profilepicture.jpg" class="w-32 h-auto my-2 rounded-lg"></div>
+  <div class="w-full flex justify-center"><img src="/images/profilepicture.jpg" class="w-32 h-auto my-2 rounded-lg"></div>
   <br>
   I was born and raised in the south-east of England, obsessed with computers and games. Not to mention loving my three cats.
   <br>
