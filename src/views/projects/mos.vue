@@ -1,12 +1,11 @@
 <template>
   <div class="fixed h-full w-full top-0 left-0 -z-50">
-    <img src="/images/mos/Background.png" class="object-cover object-center overflow-hidden h-full w-full">
+    <img src="/prydwen/images/mos/Background.png" class="object-cover object-center overflow-hidden h-full w-full">
   </div>
 
   <ProjectTitle title="Munitions Officer Simulator"
-              subtitle="Game Feel and Polish"
-              image="/agm/LogoPart1.png">
-    <ProjectTitleLink link="https://youtu.be/8z7NPgZNUYU" linktext="YouTube" />
+              subtitle="Game Feel and Polish">
+  <ProjectTitleLink link="https://youtu.be/8z7NPgZNUYU" linktext="YouTube" />
   </ProjectTitle>
 
   <div class="w-full h-fit flex flex-row place-content-center mb-12">
@@ -36,7 +35,7 @@
       To simulate this effect on the two dimensional prototype I am constructing, any interactable objects will be set to continuously simulate their position in world space. The player’s cursor will not directly influence the positions of these objects, but instead impart forces upon them that “push” or “pull” the object in the intended direction. Combined with a slight delay, this creates the feeling of weight or drag on the object.
     </template>
     <template #ImageColumn>
-      <ProjectInlineImage image="/images/mos/interaction1.png" />
+      <ProjectInlineImage image="/prydwen/images/mos/interaction1.png" />
     </template>
   </ProjectParagraph>
   <ProjectParagraph title="User Interface">
@@ -58,8 +57,8 @@
       The goal of this system is to take the new design and apply it to the old systems, creating a far more visually appealing result. The new UI will also feature additional elements to aid in accessibility, such as the changing of colour for some elements when they are enabled/disabled or when a certain value is positive/negative in context. The use of a windowed design allows for multiple UI elements to be displayed and hidden within their relevant contexts while also maximising the player choice to organise their view as they see fit. While providing an initial increase in workload to setup, the longer term maintenance will be lower as there will not need to be as many considerations for fitting content on a static HUD.
     </template>
     <template #ImageColumn>
-      <ProjectInlineImage image="/images/mos/interface1.png" />
-      <ProjectInlineImage image="/images/mos/interface2.png" />
+      <ProjectInlineImage image="/prydwen/images/mos/interface1.png" />
+      <ProjectInlineImage image="/prydwen/images/mos/interface2.png" />
     </template>
   </ProjectParagraph>
   <ProjectParagraph title="MAC System">
@@ -130,7 +129,7 @@
       their own score or success.
     </template>
     <template #ImageColumn>
-      <ProjectInlineImage image="/images/mos/mac1.png" />
+      <ProjectInlineImage image="/prydwen/images/mos/mac1.png" />
     </template>
   </ProjectParagraph>
 </template>

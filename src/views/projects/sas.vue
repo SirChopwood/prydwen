@@ -1,11 +1,10 @@
 <template>
   <div class="fixed h-full w-full top-0 left-0 -z-50">
-    <img src="/images/sas/Promotional_Poster_2.png" class="object-cover object-center overflow-hidden">
+    <img src="/prydwen/images/sas/Promotional_Poster_2.png" class="object-cover object-center overflow-hidden">
   </div>
 
   <ProjectTitle title="Siege & Shield "
-              subtitle="Senior Collaborative Project"
-              image="/agm/LogoPart1.png">
+              subtitle="Senior Collaborative Project">
     <ProjectTitleLink link="https://sirchopwood.itch.io/siege-and-shield" linktext="Itch.io" />
   </ProjectTitle>
 
@@ -36,7 +35,7 @@
       All towers are then managed by a manager actor in the world, this acts as the main method of communication and interaction between the player and towers. This manager is how the player can Buy, Sell and Upgrade towers as well as holding the currency for the game. It contains systems in place for unlockable towers throughout the game and even branching upgrade paths, if designers wish to use them.
     </template>
     <template #ImageColumn>
-      <ProjectInlineImage image="/images/sas/SiegeAndShieldBuilding.gif" />
+      <ProjectInlineImage image="/prydwen/images/sas/SiegeAndShieldBuilding.gif" />
     </template>
   </ProjectParagraph>
   <ProjectParagraph title="Materials and VFX">
@@ -48,7 +47,7 @@
       Lastly, once towers were being implemented, I worked on some particle systems that they'd use. This included the spinning crystals of the Pylon and the bubbling embers of the Cauldron tower. However, due to limitations in other areas, the priority of these elements was low so only a few were finished.
     </template>
     <template #ImageColumn>
-      <ProjectInlineImage image="/images/sas/SiegeAndShieldTechArt.gif" />
+      <ProjectInlineImage image="/prydwen/images/sas/SiegeAndShieldTechArt.gif" />
     </template>
   </ProjectParagraph>
 </template>
