@@ -21,11 +21,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-strategy:
-      matrix:
-        node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
 jobs:
   # Single deploy job since we're just deploying
   deploy:
@@ -36,10 +31,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js 18.x
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18.x
           cache: 'npm'
       - run: npm ci
       - run: npm run build-only
