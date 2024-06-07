@@ -1,4 +1,5 @@
 <template>
+  <div id="background" class="fixed w-full h-full top-0 left-0"></div>
   <div class="flex my-80 w-full h-1/6 justify-center">
     <div class="relative text-left text-7xl top-10 left-16">
       <div class="absolute text-left text-3xl -top-10 -left-32">
@@ -13,8 +14,7 @@
   </div>
   <div class="mt-8 text-2xl text-center text-secondary">My other projects:</div>
   <div class="w-full mt-2 grid grid-cols-4 gap-8 px-4 justify-items-center">
-    <ProjectThumbnail title="MOSVR" subtitle="Game Feel and Polish - Project 2" link="/projects/mosvr"/>
-    <ProjectThumbnail title="Village Builder" subtitle="Game Feel and Polish - Project 1" link="/projects/vb"/>
+    <ProjectThumbnail title="Munitions Officer Simulator" subtitle="Game Feel and Polish - Project 2" link="/projects/mos"/>
     <ProjectThumbnail title="Versus Tower Defence" subtitle="Online Multiplayer Prototype" link="/projects/vstd"/>
     <ProjectThumbnail title="Siege and Shield" subtitle="Senior Collaborative Project" image="/images/sas/SiegeAndShieldHeader.png" link="/projects/sas"/>
     <ProjectThumbnail title="Ramiris' Heresy" subtitle="Arma 3 Modding Experience" image="/images/rh/Voidmen.png" link="https://steamcommunity.com/sharedfiles/filedetails/?id=2167631151"/>

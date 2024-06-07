@@ -59,7 +59,7 @@ import ProjectTitleLink from "@/components/ProjectTitleLink.vue";
 import ProjectParagraph from "@/components/ProjectParagraph.vue";
 import ProjectInlineImage from "@/components/ProjectInlineImage.vue";
 export default {
-  name: "agm",
+  name: "sas",
   components: {ProjectInlineImage, ProjectParagraph, ProjectTitleLink, ProjectTitle}
 }
 </script>
