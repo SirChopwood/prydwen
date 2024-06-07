@@ -10,7 +10,7 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/#/about',
+      path: '/about',
       name: 'about',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -18,22 +18,22 @@ const router = createRouter({
       component: () => import('../views/about.vue')
     },
     {
-      path: '/#/projects/agm',
+      path: '/projects/agm',
       name: 'agm',
       component: () => import('../views/projects/agm.vue')
     },
     {
-      path: '/#/projects/mos',
+      path: '/projects/mos',
       name: 'mos',
       component: () => import('../views/projects/mos.vue')
     },
     {
-      path: '/#/projects/sas',
+      path: '/projects/sas',
       name: 'sas',
       component: () => import('../views/projects/sas.vue')
     },
     {
-      path: '/#/:pathMatch(.*)*',
+      path: '/:pathMatch(.*)*',
       name: 'notfound',
       component: HomeView
     }
