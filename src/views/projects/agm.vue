@@ -1,5 +1,5 @@
 <template>
-  <img src="/images/agm/tempbg.png" class="fixed w-auto h-full top-0 left-0 -z-50">
+  <ProjectBackground image="/images/agm/tempbg.png" />
   <ProjectTitle title="Adventurer's Guild Manager"
               subtitle="Master's Final Project, Gameplay Programming & User Interfaces"
               image="/agm/LogoPart1.png">
@@ -83,8 +83,9 @@ import ProjectTitle from "@/components/ProjectTitle.vue";
 import ProjectTitleLink from "@/components/ProjectTitleLink.vue";
 import ProjectParagraph from "@/components/ProjectParagraph.vue";
 import ProjectInlineImage from "@/components/ProjectInlineImage.vue";
+import ProjectBackground from "@/components/ProjectBackground.vue";
 export default {
   name: "agm",
-  components: {ProjectInlineImage, ProjectParagraph, ProjectTitleLink, ProjectTitle}
+  components: {ProjectBackground, ProjectInlineImage, ProjectParagraph, ProjectTitleLink, ProjectTitle}
 }
 </script>

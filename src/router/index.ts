@@ -33,6 +33,11 @@ const router = createRouter({
       component: () => import('../views/projects/sas.vue')
     },
     {
+      path: '/projects/dvz',
+      name: 'dvz',
+      component: () => import('../views/projects/dvz.vue')
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'notfound',
       component: HomeView

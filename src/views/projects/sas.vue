@@ -1,11 +1,6 @@
 <template>
-  <div class="fixed h-full w-full top-0 left-0 -z-50">
-    <img src="/images/sas/Promotional_Poster_2.png" class="object-cover object-center overflow-hidden">
-  </div>
-
-  <ProjectTitle title="Siege & Shield "
-              subtitle="Senior Collaborative Project"
-              image="/agm/LogoPart1.png">
+  <ProjectBackground image="/images/sas/Promotional_Poster_2.png" />
+  <ProjectTitle title="Siege & Shield" subtitle="Senior Collaborative Project" image="/agm/LogoPart1.png">
     <ProjectTitleLink link="https://sirchopwood.itch.io/siege-and-shield" linktext="Itch.io" />
   </ProjectTitle>
 
@@ -58,8 +53,9 @@ import ProjectTitle from "@/components/ProjectTitle.vue";
 import ProjectTitleLink from "@/components/ProjectTitleLink.vue";
 import ProjectParagraph from "@/components/ProjectParagraph.vue";
 import ProjectInlineImage from "@/components/ProjectInlineImage.vue";
+import ProjectBackground from "@/components/ProjectBackground.vue";
 export default {
   name: "sas",
-  components: {ProjectInlineImage, ProjectParagraph, ProjectTitleLink, ProjectTitle}
+  components: {ProjectBackground, ProjectInlineImage, ProjectParagraph, ProjectTitleLink, ProjectTitle}
 }
 </script>

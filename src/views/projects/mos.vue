@@ -1,15 +1,12 @@
 <template>
-  <div class="fixed h-full w-full top-0 left-0 -z-50">
-    <img src="/images/mos/Background.png" class="object-cover object-center overflow-hidden h-full w-full">
-  </div>
-
+  <ProjectBackground image="/images/mos/Background.png" />
   <ProjectTitle title="Munitions Officer Simulator"
               subtitle="Game Feel and Polish"
               image="/agm/LogoPart1.png">
     <ProjectTitleLink link="https://youtu.be/8z7NPgZNUYU" linktext="YouTube" />
   </ProjectTitle>
 
-  <div class="w-full h-fit flex flex-row place-content-center mb-12">
+  <div class="relative w-full h-fit flex flex-row place-content-center mb-12">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8z7NPgZNUYU?si=6T502YgYt7Khfw0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="border-2 border-secondary hover:border-primary rounded-md"></iframe>
   </div>
   <ProjectParagraph title="Interaction System">
@@ -140,8 +137,9 @@ import ProjectTitle from "@/components/ProjectTitle.vue";
 import ProjectTitleLink from "@/components/ProjectTitleLink.vue";
 import ProjectParagraph from "@/components/ProjectParagraph.vue";
 import ProjectInlineImage from "@/components/ProjectInlineImage.vue";
+import ProjectBackground from "@/components/ProjectBackground.vue";
 export default {
   name: "agm",
-  components: {ProjectInlineImage, ProjectParagraph, ProjectTitleLink, ProjectTitle}
+  components: {ProjectBackground, ProjectInlineImage, ProjectParagraph, ProjectTitleLink, ProjectTitle}
 }
 </script>
