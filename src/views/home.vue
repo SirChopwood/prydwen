@@ -1,8 +1,5 @@
 <template>
-  <div id="background" class="fixed w-full h-full top-0 left-0 bg-secondary bg-blend-screen">
-    <div class="w-full h-full halftone"></div>
-  </div>
-  <div class="flex my-40 md:my-80 w-full h-1/6 justify-center">
+  <div class="flex my-40 md:my-60 w-full h-1/6 justify-center">
     <div class="relative text-left text-7xl top-12 left-2 md:left-6 lg:left-16 p-4 bg-black bg-opacity-80 rounded-lg">
       <div class="absolute text-left text-3xl -top-12 -left-2 md:-left-12 lg:-left-32 p-4 bg-black bg-opacity-80 rounded-lg">
         Hello there...
@@ -12,8 +9,8 @@
   </div>
   <div class="relative w-full text-3xl my-4 p-4 text-primary text-left font-black">
     <div class="border-2 border-secondary border-b-primary bg-black bg-opacity-80 rounded-t-lg p-2 pl-4">My Portfolio</div>
-    <div class="border-2 border-secondary border-t-0 w-full grid grid-cols-1 md:grid-cols-2 py-4 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center rounded-b-lg bg-black bg-opacity-80">
-      <ProjectThumbnail title="Dwarves VS Zombies Standalone" subtitle="Multiplayer asymmetric PvP survival personal project. Daily Devlogs." image="/images/dvz/dvzlogo.png" link="/#/projects/dvz">
+    <div class="border-2 border-secondary border-t-0 w-full grid grid-cols-1 md:grid-cols-2 py-4 px-4 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center rounded-b-lg bg-black bg-opacity-80">
+      <ProjectThumbnail title="Dwarves VS Zombies Standalone" subtitle="Multiplayer asymmetric PvP survival personal project and daily Devlogs." image="/images/dvz/dvzlogo.png" link="/#/projects/dvz">
         <div class="absolute bottom-0 w-full px-2 py-0.5 text-xl font-black bg-green-800 border-2 border-green-400 rounded-b-md text-green-400">Current</div>
       </ProjectThumbnail>
       <ProjectThumbnail title="Adventurer's Guild Manager" subtitle="Master's Final Project, Gameplay Programming & User Interfaces" image="/images/agm/LogoPart1.png" link="/#/projects/agm">
@@ -39,12 +36,3 @@ export default {
   components: {ProjectThumbnail}
 }
 </script>
-
-<style>
-  .halftone {
-    position: absolute;
-    background: linear-gradient(to bottom, #777777, #ffffff), radial-gradient( 20px at 50% 50%, #fff, #000 ) top left / 30px 30px, #c940af;
-    background-blend-mode: multiply;
-    filter: brightness(1.3) blur(0px) contrast(30) saturate(0.7);
-  }
-</style>

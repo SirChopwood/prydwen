@@ -7,6 +7,7 @@
     <div class="inline-flex items-center md:mr-4 md:float-end w-fit h-full gap-8">
       <Headerbutton text="Portfolio" link="/#/" />
       <Headerbutton text="About Me" link="/#/about" />
+      <Headerbutton text="My CV" link="/documents/CV2.pdf" />
     </div>
   </div>
   <div class="fixed w-full h-32 top-0 flex justify-center pointer-events-none">
