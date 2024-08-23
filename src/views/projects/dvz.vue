@@ -129,7 +129,36 @@
       What's less good is that i want to change items from UActors to UObjects which will require redoing most things.
       <br>
       Though this is a good chance to decouple some of the UI and functions.
-      At some point earlier today i believe i have armour values, health values and the reinforcement enchant working now... so yay?
+    </ProjectParagraph>
+    <ProjectParagraph title="Day 10 - Problems and Plans" date="19/08/2024">
+      Today's progress has been slow.
+      <br>
+      I've quickly come to realise that some  of the previous work is already going to need redoing if its to be integrated together.
+      <br>
+      For one, the camera system needs overhauling to work alongside the combat system.
+      <br><br>
+      The inventory system has already been marked for conversion over to C++ by Val so that'll be good.
+      <br>
+      What's less good is needing to change items from UActors to UObjects, requiring redoing most things.
+      <br>
+      Though this is a good chance to decouple some of the UI and functions.
+    </ProjectParagraph>
+    <ProjectParagraph title="Day 11 - We're SO back!
+" date="22/08/2024">
+      <template #BodyColumn>
+        Took a couple days off to just unwind and refresh my mind, plus I ported this devlog onto my <a class="text-primary hover:underline" href="https://x.com/LouisMayes2001" >personal twitter</a> and website.
+        <br><br>
+        <span class="text-secondary font-bold">(Hello if you're reading from here!)</span>
+        <br><br>
+        Back at it again now with the new camera angle set and rotation keybinds added.
+        <br>
+        I also added a few little things to the test world to aide testing.
+        <br><br>
+        Expect news on Val's C++ branch very soon, already got Rider and VS setup so we can go once that's ready.
+      </template>
+      <template #ImageColumn>
+        <ProjectInlineImage image="/images/dvz/day11.png" />
+      </template>
     </ProjectParagraph>
   </div>
 </template>
