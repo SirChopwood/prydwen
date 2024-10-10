@@ -1,10 +1,3 @@
-<script setup lang=ts>
-  import { useHead } from '@unhead/vue'
-  useHead({
-    title: 'Munitions Officer Simulator',
-  })
-</script>
-
 <template>
   <ProjectBackground image="/images/mos/Background.png" />
   <ProjectTitle title="Munitions Officer Simulator"
@@ -139,7 +132,7 @@
   </ProjectParagraph>
 </template>
 
-<script lang=ts>
+<script>
 import ProjectTitle from "@/components/ProjectTitle.vue";
 import ProjectTitleLink from "@/components/ProjectTitleLink.vue";
 import ProjectParagraph from "@/components/ProjectParagraph.vue";

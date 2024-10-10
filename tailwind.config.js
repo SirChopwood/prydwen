@@ -15,5 +15,5 @@ export default {
       }
     },
   },
-  plugins: [require('tailwindcss-unimportant')],
+  plugins: [],
 }
