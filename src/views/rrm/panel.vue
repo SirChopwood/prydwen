@@ -1,9 +1,9 @@
 <script setup lang=ts>
 import { useHead } from '@unhead/vue'
-import PanelControlCategory from "@/components/dmca/PanelControlCategory.vue";
-import PanelControlButton from "@/components/dmca/PanelControlButton.vue";
-import PanelToolbarButton from "@/components/dmca/PanelToolbarButton.vue";
-import PanelRequestQueueEntry from "@/components/dmca/PanelRequestQueueEntry.vue";
+import PanelControlCategory from "@/components/rrm/PanelControlCategory.vue";
+import PanelControlButton from "@/components/rrm/PanelControlButton.vue";
+import PanelToolbarButton from "@/components/rrm/PanelToolbarButton.vue";
+import PanelRequestQueueEntry from "@/components/rrm/PanelRequestQueueEntry.vue";
 
 useHead({
   title: 'RRM',
