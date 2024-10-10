@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import { useHead } from '@unhead/vue'
 import Header from './components/Header.vue'
+useHead({
+  title: '???',
+  titleTemplate: '%s | Louis Mayes'
+})
 </script>
 
 <template>

@@ -1,3 +1,10 @@
+<script setup lang=ts>
+  import { useHead } from '@unhead/vue'
+  useHead({
+    title: 'Adventurer\'s Guild Manager',
+  })
+</script>
+
 <template>
   <ProjectBackground image="/images/agm/tempbg.png" />
   <ProjectTitle title="Adventurer's Guild Manager"
@@ -78,7 +85,7 @@
   </ProjectParagraph>
 </template>
 
-<script>
+<script lang=ts>
 import ProjectTitle from "@/components/ProjectTitle.vue";
 import ProjectTitleLink from "@/components/ProjectTitleLink.vue";
 import ProjectParagraph from "@/components/ProjectParagraph.vue";

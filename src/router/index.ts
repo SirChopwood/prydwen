@@ -1,8 +1,8 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/home.vue'
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHistory("/"),
   routes: [
     {
       path: '/',
@@ -16,11 +16,6 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/about.vue')
-    },
-    {
-      path: '/cv',
-      name: 'cv',
-      component: () => import('../views/cv.vue')
     },
     {
       path: '/projects/agm',
@@ -41,6 +36,16 @@ const router = createRouter({
       path: '/projects/dvz',
       name: 'dvz',
       component: () => import('../views/projects/dvz.vue')
+    },
+    {
+      path: '/rrm',
+      name: 'rrm_auth',
+      component: () => import('../views/rrm/auth.vue')
+    },
+    {
+      path: '/rrm/panel',
+      name: 'rrm_panel',
+      component: () => import('../views/rrm/panel.vue')
     },
     {
       path: '/:pathMatch(.*)*',

@@ -1,3 +1,10 @@
+<script setup lang=ts>
+  import { useHead } from '@unhead/vue'
+  useHead({
+    title: 'DvZ Standalone',
+  })
+</script>
+
 <template>
   <div class="fixed top-0 left-0 bg-center bg-repeat w-full h-full object-center -z-100" style="background-image: url('/images/dvz/dvzprototype.png')" />
   <ProjectTitle title="Dwarves VS Zombies Standalone"
@@ -163,7 +170,7 @@
   </div>
 </template>
 
-<script>
+<script lang=ts>
 import ProjectTitle from "@/components/ProjectTitle.vue";
 import ProjectTitleLink from "@/components/ProjectTitleLink.vue";
 import ProjectParagraph from "@/components/ProjectParagraph.vue";
