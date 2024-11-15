@@ -13,12 +13,10 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "particles.js": "^2.0.0",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
     "@types/jquery": "^3.5.31",
     "@unhead/vue": "^1.11.7",
-    "particles.js": "^2.0.0",
     "tailwindcss-unimportant": "^2.1.1"
   },
   "devDependencies": {
