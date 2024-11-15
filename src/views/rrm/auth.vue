@@ -17,7 +17,7 @@ useHead({
 export default {
   name: "rmm_auth",
   mounted() {
-    const newUri = encodeURI("https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=987qwjbkxwv2y140zukpj8hzozd2yg&redirect_uri=http://localhost:5173/rrm/panel&scope=user:read:moderated_channels")
+    const newUri = encodeURI("https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=987qwjbkxwv2y140zukpj8hzozd2yg&redirect_uri=http://localhost:5173/rrm/panel&scope=user:read:moderated_channels user:read:follows")
     let RedirectButton = document.getElementById("RedirectButton")
     RedirectButton.setAttribute("href", newUri)
     setTimeout(() => {window.location.replace(newUri)}, 1500)

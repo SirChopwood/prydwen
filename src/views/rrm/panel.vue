@@ -6,29 +6,22 @@ import PanelToolbarButton from "@/components/rrm/PanelToolbarButton.vue";
 import PanelRequestQueueEntry from "@/components/rrm/PanelRequestQueueEntry.vue";
 
 useHead({
-  title: 'RRM',
+  title: 'RRM Panel',
   // @ts-ignore
   script: [
     {src: "https://code.jquery.com/jquery-3.6.0.js", async: true, defer: true, onload: () => {
-      // @ts-ignore
-      setupTwitchAccount()
-    }},
-    {src: "https://code.jquery.com/ui/1.13.2/jquery-ui.js", async: true, defer: true, onload: () => {
-        $("#SongQueue").sortable({
-          placeholder: "PanelQueueBoxPlaceholder",
-          helper: 'clone',
-          revert: true,
-          cursor: "move",
-          opacity: 1,
-          axis: "y",
-          cancel: "span,input,textarea,button,select,option",
-          handle: ".SongQueueEntryHandle",
-          forcePlaceholderSize: true
-        })
-      }},
-    {src: "https://player.twitch.tv/js/embed/v1.js", async: true, defer: true, onload: () => {
         // @ts-ignore
-        loadTwitchPlayer("krisuna")
+        setupTwitchAccount()
+      }
+    },
+    {src: "https://code.jquery.com/ui/1.13.2/jquery-ui.js", async: true, defer: true, onload: () => {
+        // @ts-ignore
+        setupRequestQueue()
+      }
+    },
+    {src: "https://player.twitch.tv/js/embed/v1.js", async: true, defer: true, onload: () => {
+        // @ts-ignore()
+        twitchReady = true
       }
     }
   ]
@@ -39,9 +32,15 @@ useHead({
   <div class="fixed top-0 left-0 w-full h-full -z-100 bg-neutral-900"></div>
   <div class="relative w-full flex justify-center text-base">
     <div class="w-full flex flex-col gap-4">
-      <div class="w-full h-fit bg-neutral-800 mt-0 drop-shadow-xl rounded-lg flex flex-row divide-x divide-neutral-700 [&>*:first-child]:rounded-l-lg [&>*:last-child]:rounded-r-lg">
+      <div class="w-full h-fit bg-neutral-800 mt-0 drop-shadow-xl rounded-b-lg flex flex-row divide-x divide-neutral-700 [&>*:first-child]:rounded-l-lg [&>*:last-child]:rounded-r-lg">
         <PanelToolbarButton buttonid="ToolbarTitle" text="Rami Request Manager" class="text-primary font-bold" disabled/>
-        <div class=""><img id="ToolbarUserImage" class="h-12 inline" src="/images/logo.png"><select class="min-w-40 max-w-80 bg-neutral-800 px-2 text-secondary" name="Channels" id="ToolbarUserChannels"></select></div>
+        <div class="">
+          <img id="ToolbarUserImage" class="h-12 inline" src="/images/logo.png">
+          <select class="min-w-40 max-w-80 bg-neutral-800 px-2 text-secondary text-lg" name="Channels" id="ToolbarUserChannels">
+            <option class="text-neutral-400" value="none">No Stream Selected</option>
+            <option class="text-neutral-400" value="totless">Totless</option>
+          </select>
+        </div>
         <!--TOOLBAR CONTROLS-->
         <PanelToolbarButton buttonid="ToolbarSetup" class="hover:bg-red-900 hover:text-red-300 bg-red-950 text-red-400" text="Setup Panel"></PanelToolbarButton>
         <PanelToolbarButton buttonid="ToolbarHost" text="Host: The DJ Fry"/>
@@ -59,10 +58,10 @@ useHead({
         </PanelToolbarButton>
       </div>
       <div class="w-full flex flex-row gap-4">
-        <div class="w-fit h-fit bg-neutral-800 drop-shadow-xl rounded-lg p-4">
+        <div class="basis-3/5 h-full bg-neutral-800 drop-shadow-xl rounded-lg p-4">
           <div id="EmbeddedTwitchPlayer"/>
         </div>
-        <div class="grow bg-black bg-neutral-800 drop-shadow-xl rounded-lg p-4 flex flex-col gap-4">
+        <div class="basis-2/5 grow bg-black bg-neutral-800 drop-shadow-xl rounded-lg p-4 flex flex-col gap-4 overflow-y-scroll">
           <!--SESSION CONTROLS-->
           <PanelControlCategory title="Session Controls" subtitle="This is how you set if people can make requests.">
             <ul class="list-disc pl-6">
@@ -89,7 +88,7 @@ useHead({
             <PanelControlButton buttonid="OverlayMessagePause" class="border-blue-800 bg-blue-600 disabled:bg-blue-900 text-blue-400" text="Previous"></PanelControlButton>
             <PanelControlButton buttonid="OverlayMessagePause" class="border-blue-800 bg-blue-600 disabled:bg-blue-900 text-blue-400" text="Next"></PanelControlButton>
             <PanelControlButton buttonid="OverlayMessageRemove" class="border-red-800 bg-red-600 disabled:bg-red-900 text-red-400" text="Clear"></PanelControlButton>
-            <div id="RequestQueue" class="resize-y overflow-y-scroll overflow-x-clip text-pretty min-h-20 w-full rounded-lg bg-neutral-900 flex flex-col">
+            <div id="RequestQueue" class="h-40 resize-y overflow-y-scroll overflow-x-clip text-pretty min-h-20 w-full rounded-lg bg-neutral-900 flex flex-col">
               <PanelRequestQueueEntry name="Beep Beep I'm A Sheep" songID="2232" user="MrMimi"/>
               <PanelRequestQueueEntry name="Starships - Nicki Minaj" songID="427" user="MrMimi"/>
               <PanelRequestQueueEntry name="I WANT IT THAT WAY (Remix) by Backstreet Boys" songID="871" user="DJ_Fry"/>
@@ -107,12 +106,26 @@ useHead({
 </template>
 
 <script lang="ts">
-
+  let twitchReady = false
 
   export default {
     name: "rrm_panel",
     mounted() {
     }
+  }
+
+  function setupRequestQueue() {
+    $("#SongQueue").sortable({
+      placeholder: "PanelQueueBoxPlaceholder",
+      helper: 'clone',
+      revert: true,
+      cursor: "move",
+      opacity: 1,
+      axis: "y",
+      cancel: "span,input,textarea,button,select,option",
+      handle: ".SongQueueEntryHandle",
+      forcePlaceholderSize: true
+    })
   }
 
   function setupTwitchAccount() {
@@ -148,13 +161,22 @@ useHead({
         console.log(userImage)
         userImage.src = data.data[0].profile_image_url
         console.log("Logged in to Twitch")
-        $.get(`https://api.twitch.tv/helix/moderation/channels?user_id=${data.data[0].id}`, function (data2) {
+
+        $.get(`https://api.twitch.tv/helix/channels/followed?user_id=${data.data[0].id}`, function (data2) {
+        //$.get(`https://api.twitch.tv/helix/moderation/channels?user_id=${data.data[0].id}`, function (data2) {
           let moddedChannels = data2.data
           let moddedChannelsDropdown = $("#ToolbarUserChannels")
           for (let moddedChannel of moddedChannels) {
             let newOption = $(`<option class="text-neutral-400" value="${moddedChannel.broadcaster_login}">${moddedChannel.broadcaster_name}</option>`)
             moddedChannelsDropdown.append(newOption)
           }
+          moddedChannelsDropdown.on('change', function() {
+            if (this.value === "none") {
+              $("#EmbeddedTwitchPlayer").empty();
+            } else {
+              loadTwitchPlayer(this.value)
+            }
+          })
         })
       } else {console.log("Failed to login to Twitch")}
     })
@@ -162,12 +184,9 @@ useHead({
 
   let TwitchPlayer: any
   function loadTwitchPlayer(channel: string) {
-    if (TwitchPlayer) {
-      // @ts-ignore
-      $("#EmbeddedTwitchPlayer").empty();
-    }
+    $("#EmbeddedTwitchPlayer").empty();
     let TwitchOptions = {
-      width: window.screen.width*0.6,
+      width: "100%",
       height: window.screen.height*0.6,
       channel: channel,
       autoplay: true,
