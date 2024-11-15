@@ -4,13 +4,16 @@ import Header from './components/Header.vue'
 </script>
 
 <template>
-  <div id="background" class="fixed w-full h-full top-0 left-0 bg-secondary bg-blend-screen">
-    <div class="w-full h-full halftone"></div>
+  <div v-if="$route.meta.header === true">
+    <div id="background" class="fixed w-full h-full top-0 left-0 bg-secondary bg-blend-screen bg-neutral-950">
+      <div class="w-full h-full halftone"></div>
+    </div>
+    <div class="mt-16 mx-2 mb-2">
+      <RouterView />
+    </div>
+    <Header/>
   </div>
-  <div class="mt-16 mx-2 mb-2">
-    <RouterView />
-  </div>
-  <Header />
+  <RouterView v-if="$route.meta.header === false"/>
 </template>
 
 <style>
