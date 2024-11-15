@@ -1,12 +1,12 @@
 <template>
   <div id="Header" class="fixed w-full h-fit p-1 md:py-2 top-0 bg-neutral-800 text-primary border-b-4 border-secondary text-xl drop-shadow-lg flex flex-row flex-wrap justify-center">
     <div class="items-center h-full w-fit md:ml-4 md:justify-self-start md:grow flex flex-row">
-      <div class="text-2xl font-bold"><a href="/">Louis Mayes</a></div>
+      <div class="text-2xl font-bold"><a href="/#/">Louis Mayes</a></div>
       <div class="pl-4 italic text-neutral-400">Game Developer</div>
     </div>
     <div class="flex flex-row items-center justify-evenly md:justify-center md:mr-4 md:justify-self-end w-fit h-full gap-4 md:gap-8 flex-wrap">
-      <Headerbutton text="Portfolio" link="/" title="Work and Projects" />
-      <Headerbutton text="About Me" link="/about" title="Personal Introduction" />
+      <Headerbutton text="Portfolio" link="/#/" title="Work and Projects" />
+      <Headerbutton text="About Me" link="/#/about" title="Personal Introduction" />
       <Headerbutton text="My CV" link="/documents/CV2.pdf" title="Curriculum Vitae / Resume" />
       <Headerbutton link="https://x.com/LouisMayes2001" title="Twitter / 𝕏">
         <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 26 26">
@@ -21,7 +21,7 @@
     </div>
   </div>
   <div class="fixed w-full h-32 top-0 flex justify-center pointer-events-none">
-    <img src="/images/logo.png" class="hidden md:block h-24 w-auto">
+    <img src="/images/logo.png" class="hidden md:block h-24 w-auto md:ml-4">
   </div>
 </template>
 

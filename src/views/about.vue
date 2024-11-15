@@ -1,10 +1,3 @@
-<script setup lang=ts>
-  import { useHead } from '@unhead/vue'
-  useHead({
-    title: 'About',
-  })
-</script>
-
 <template>
   <div class="relative w-full flex justify-center">
     <div class="w-fit bg-black bg-opacity-70 rounded-lg border-secondary border-2 px-8">

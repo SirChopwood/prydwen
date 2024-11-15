@@ -1,10 +1,3 @@
-<script setup lang=ts>
-  import { useHead } from '@unhead/vue'
-  useHead({
-    title: 'Siege & Shield',
-  })
-</script>
-
 <template>
   <ProjectBackground image="/images/sas/Promotional_Poster_2.png" />
   <ProjectTitle title="Siege & Shield" subtitle="Senior Collaborative Project" image="/agm/LogoPart1.png">
@@ -55,7 +48,7 @@
   </ProjectParagraph>
 </template>
 
-<script lang=ts>
+<script>
 import ProjectTitle from "@/components/ProjectTitle.vue";
 import ProjectTitleLink from "@/components/ProjectTitleLink.vue";
 import ProjectParagraph from "@/components/ProjectParagraph.vue";
