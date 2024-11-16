@@ -28,7 +28,7 @@
     <script>
         const path = window.location.pathname.slice(1);
         const hash = window.location.hash;
-        console.log("Saving Path: ", path, hash)
+        console.log("Saving Path: ", path, " -> ", hash)
         sessionStorage.setItem('path', path);
         sessionStorage.setItem('hash', hash);
         window.location.href='../';

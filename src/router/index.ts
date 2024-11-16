@@ -8,7 +8,16 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
-      meta: {header: true}
+      meta: {header: true},
+      beforeEnter(to, from) {
+        let path = sessionStorage.getItem('path');
+        let hash = sessionStorage.getItem('hash');
+        console.log("Loading Path: ", path, " -> ", hash)
+        if(path) {
+          sessionStorage.removeItem('path');
+          return { path: path, replace: true}
+        }
+      }
     },
     {
       path: '/about',
@@ -77,13 +86,6 @@ const router = createRouter({
     }
   ]
 })
-router.beforeEach((to, from) => {
-  let path = sessionStorage.getItem('path');
-  let hash = sessionStorage.getItem('hash');
-  console.log("Loading Path: ", path, hash)
-  if(path) {
-    sessionStorage.removeItem('path');
-    return { path: path, replace: true}
-  }
-})
+// router.beforeEach((to, from) => {
+// })
 export default router
