@@ -78,10 +78,10 @@ const router = createRouter({
   ]
 })
 router.beforeEach((to, from) => {
-  let path = localStorage.getItem('path');
+  let path = sessionStorage.getItem('path');
   console.log("Loading Path: ", path)
   if(path) {
-    localStorage.removeItem('path');
+    sessionStorage.removeItem('path');
     return { path: path, replace: true}
   }
 })
