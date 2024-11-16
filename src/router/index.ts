@@ -79,7 +79,8 @@ const router = createRouter({
 })
 router.beforeEach((to, from) => {
   let path = sessionStorage.getItem('path');
-  console.log("Loading Path: ", path)
+  let hash = sessionStorage.getItem('hash');
+  console.log("Loading Path: ", path, hash)
   if(path) {
     sessionStorage.removeItem('path');
     return { path: path, replace: true}
