@@ -131,7 +131,7 @@ useHead({
   function setupTwitchAccount() {
     let authProperties: Record<string, string> = {} // Access Token = authProperties["access_token"]
     try { // ENSURE USER IS LOGGED IN VIA TWITCH
-      let properties = String(window.location.hash).replace("#","").split("&")
+      let properties = sessionStorage.getItem('hash').split("&")//String(window.location.hash).replace("#","").split("&")
       for (let property of properties) {
         let newProperty = property.split("=")
         authProperties[newProperty[0]] = newProperty[1]

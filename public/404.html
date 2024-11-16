@@ -28,14 +28,8 @@
     <script>
         const path = window.location.pathname.slice(1);
         console.log("Saving Path: ", path)
-        if (path.includes("#")) {
-            splitPath = path.split("#")
-            sessionStorage.setItem('path', splitPath[0]);
-            sessionStorage.setItem('hash', splitPath[1]);
-        }
-        else {
-            sessionStorage.setItem('path', path);
-        }
+        sessionStorage.setItem('path', path);
+        sessionStorage.setItem('hash', window.location.hash);
         window.location.href='../';
     </script>
 </html>
