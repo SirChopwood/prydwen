@@ -27,7 +27,15 @@
 
     <script>
         const path = window.location.pathname.slice(1);
-        localStorage.setItem('path', path);
+        console.log("Saving Path: ", path)
+        if (path.includes("#")) {
+            splitPath = path.split("#")
+            sessionStorage.setItem('path', splitPath[0]);
+            sessionStorage.setItem('hash', splitPath[1]);
+        }
+        else {
+            sessionStorage.setItem('path', path);
+        }
         window.location.href='../';
     </script>
 </html>

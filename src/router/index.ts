@@ -71,14 +71,15 @@ const router = createRouter({
     {
       path: '/:pathMatch(.*)*',
       name: 'notfound',
-      component: HomeView,
+      beforeEnter() {location.href = "/404"},
+      component: { template: '<div>404</div>'},
       meta: {header: true}
     }
   ]
 })
 router.beforeEach((to, from) => {
   let path = localStorage.getItem('path');
-  console.log(path)
+  console.log("Loading Path: ", path)
   if(path) {
     localStorage.removeItem('path');
     return { path: path, replace: true}
