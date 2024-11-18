@@ -11,8 +11,8 @@ defineProps(['songname', "requester", "songid", "thumbnail"])
     <img ref="label" class="absolute top-0">
 <!--    <div class="absolute text-left w-[89%] left-[5%] top-[14%] text-2xl text-black leading-[0.9]">{{ songname }}</div>-->
     <div class="absolute text-left w-[89%] left-[5%] top-[16%] h-8 text-4xl text-black leading-[0.9] text-clip overflow-hidden">{{ songname }}</div>
-    <div class="absolute text-left w-[60%] left-[5%] bottom-[34%] text-2xl text-black font-bold text-clip overflow-hidden">{{ requester }}</div>
-    <div class="absolute text-left w-[20%] right-[6%] bottom-[34%] text-right text-2xl text-black font-bold text-clip overflow-hidden">{{ songid }}</div>
+    <div class="absolute text-left w-[60%] left-[5%] bottom-[34%] text-2xl text-black text-clip overflow-hidden">{{ requester }}</div>
+    <div class="absolute text-left w-[20%] right-[6%] bottom-[34%] text-right text-2xl text-black text-clip overflow-hidden">{{ songid }}</div>
   </div>
 </template>
 
