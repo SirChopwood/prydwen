@@ -78,6 +78,18 @@ const router = createRouter({
       ]
     },
     {
+      path: '/totless',
+      name: 'totless',
+      meta: {header: false},
+      children: [
+        {
+          path: 'santaletters',
+          name: 'santaletters',
+          component: () => import('../views/totless/santaletters.vue')
+        }
+      ]
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'notfound',
       beforeEnter() {location.href = "/404"},
