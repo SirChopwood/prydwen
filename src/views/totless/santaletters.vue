@@ -14,11 +14,11 @@ useHead({
 </script>
 
 <template>
-  <div class="fixed w-[1920px] h-[1080px] top-0 left-0 charm-bold text-base text-orange-900 text-left">
-    <div class="absolute w-[20%] h-fit -bottom-10 -left-4">
+  <div class="fixed w-[1920px] h-[1080px] top-0 left-0 charm-bold text-lg text-orange-900 text-left">
+    <div class="absolute w-[30%] h-fit -bottom-10 -left-4">
       <img src="/images/totless/requestlist.png" class="">
       <div id="MessageBox" class="absolute left-[7%] top-[17%] w-[57%] h-[60%] -skew-y-3 skew-x-2">
-        <div class="text-xl">Dear Santa Tot</div>
+        <div class="text-2xl">Dear Santa Tot</div>
         <div class="pl-2">
           <div id="MessageText" class="charm-regular">
           </div>
@@ -29,7 +29,7 @@ useHead({
           </div>
         </div>
         <br>
-        <div class="text-xl">From <div id="UserText" class="charm-regular inline"></div></div>
+        <div class="text-2xl">From <div id="UserText" class="charm-regular inline"></div></div>
       </div>
     </div>
   </div>
