@@ -86,6 +86,11 @@ const router = createRouter({
           path: 'santaletters',
           name: 'santaletters',
           component: () => import('../views/totless/santaletters.vue')
+        },
+        {
+          path: 'factionscores',
+          name: 'factionscores',
+          component: () => import('../views/totless/factionscores.vue')
         }
       ]
     },
