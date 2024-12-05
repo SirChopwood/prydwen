@@ -91,6 +91,11 @@ const router = createRouter({
           path: 'factionscores',
           name: 'factionscores',
           component: () => import('../views/totless/factionscores.vue')
+        },
+        {
+          path: 'factionscoresfireside',
+          name: 'factionscoresfireside',
+          component: () => import('../views/totless/factionscoresfireside.vue')
         }
       ]
     },
