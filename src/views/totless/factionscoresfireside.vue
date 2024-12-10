@@ -51,10 +51,9 @@ function refreshData() {
   $.post("https://api.louismayes.xyz/factions", JSON.stringify({ "guildId": "645894488232951835" }), async function (data, status, xhr) {
     if (xhr.status == 200) {
       for (let factionId of Object.keys(data)) {
-        if (factionId === "10") { // Team Mimis
+        if (factionId === "12") { // Team Mimis
           MimisScore.text(data[factionId].score)
-        } else if (factionId === "11") { // Team Fries
-          FriesScore.text(data[factionId].score)
+FriesScore.text(data[factionId].score)
         }
       }
     } else if (xhr.status == 204) {
