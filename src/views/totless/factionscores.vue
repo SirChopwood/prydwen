@@ -18,7 +18,7 @@ useHead({
     <div class="absolute w-[6%] h-fit bottom-0 left-2 bg-black rounded-full">
       <img src="/images/totless/ModCorp_Animated.gif" class="">
       <div class="absolute w-40 h-fit text-left left-[100%] bottom-0 flex flex-col *:-my-1">
-        <div class="text-3xl font-black MainGlow">10000</div>
+        <div class="text-3xl font-black MainGlow">15000</div>
         <div class="text-lg SubGlow">To beat... or else...</div>
       </div>
     </div>
